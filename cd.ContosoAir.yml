@@ -10,8 +10,8 @@ resources:
   - pipeline: buildContosoAir  # identifier for the resource used in pipeline resource variables
     source: damayanti1610.ContosoAir # name of the pipeline that produces the artifact
 
-pool:
-  vmImage: ubuntu-latest
+pool: default
+  #vmImage: ubuntu-latest
 
 steps:
 
