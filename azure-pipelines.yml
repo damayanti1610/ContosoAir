@@ -1,4 +1,10 @@
-   pool: default
+  
+   pool:
+     name: Default
+     demands:   
+      - npm   # exists check for myCustomCapability
+      - Agent.Version -equals 2.204.0
+
      #vmImage: 'ubuntu-18.04'
    trigger:
      - master
